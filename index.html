@@ -1,0 +1,21 @@
+---
+layout: default
+title: Lulucky Blog
+---
+<h2>{{ page.title }}</h2>
+<p>Latest Articles</p>
+<ul>
+{% for post in site.posts %}
+<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+<p>Some tips:</p>
+首页使用了{% for post in site.posts %}，表示对所有帖子进行一个遍历。这里要注意的是，Liquid模板语言规定，输出内容使用两层大括号，单纯的命令使用一层大括号。至于{{site.baseurl}}就是_config.yml中设置的baseurl变量
+<br/>
+$ git add .
+$ git commit -m "first post"
+<br/>
+前往github的网站，在网站上创建一个名为blog_demo的库。接着，再将本地内容推送到github上你刚创建的库。
+<br/>
+$ git remote add origin https://github.com/your_username/blog_demo.git
+$ git push origin gh-pages
+</ul>
