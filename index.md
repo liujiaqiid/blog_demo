@@ -4,7 +4,7 @@ Host:  Api Server
 
 Path: /api/v1/resources
 
-Params:
+Params:  
 | param | usage | isRequired            |
 | ------------------------------------- |
 | status | 是否已被订购，0-已订购 | 非必需|
