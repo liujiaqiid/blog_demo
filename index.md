@@ -1,6 +1,6 @@
 # API Design
 
-目录
+##目录
 - [Changes Log](#chg_log)
 - [API设计步骤](#api_principle)
 - [服务端资源设计](#resource_desigin)
@@ -26,7 +26,7 @@
 
 
 
-<div id="chg_log" name="chg_log"></div>
+<div name="chg_log"></div>
 ## Changes Log
 <table>
   <th>
@@ -93,7 +93,7 @@
 	+ Security(Eg. Login/HIPAA)
 	+ Reduce network require times
 
-<div id="resource_design" name="resource_design"></div>
+<div name="resource_design"></div>
 ## 云端服务器资源设计
 
 + 医生/专家/老师/主任信息
@@ -262,9 +262,9 @@
 | PUT  | /api/v1/resources/:uuid | {resource_data} | {common_response} | 修改某条资源信息 |
 | DELETE | /api/v1/resources/:uuid | {} | {common_response} | 删除某条资源信息 |
 
-<h2 id='api_desigin'> 云端服务器资源接口详细设计 </h2>
+<h2 name='api_desigin'> 云端服务器资源接口详细设计 </h2>
 
-<h3 id='api_common_answer'> 1.通用应答格式 </h3>
+<h3 name='api_common_answer'> 1.通用应答格式 </h3>
 
 <hr/>
 ```Json
