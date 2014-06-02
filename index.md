@@ -1,6 +1,6 @@
 # API Design
 
-##目录
+目录
 - [Changes Log](#chg_log)
 - [API设计步骤](#api_principle)
 - [服务端资源设计](#resource_desigin)
@@ -26,8 +26,8 @@
 
 
 
-<div name="chg_log"></div>
-## Changes Log
+<h2 name="chg_log"> Changes Log </h2>
+
 <table>
   <th>
     <td>时间</td>
@@ -79,7 +79,7 @@
   </tr>
 </table>
 
-<h2 id="api_principle">API设计原则及步骤</h2>
+<h2 name="api_principle">API设计原则及步骤</h2>
 
   基本原则包括如下几点：
   + 以RESTful架构风格组织服务端资源
@@ -93,8 +93,7 @@
 	+ Security(Eg. Login/HIPAA)
 	+ Reduce network require times
 
-<div name="resource_design"></div>
-## 云端服务器资源设计
+<h2 name='resource_design'>云端服务器资源设计</h2>
 
 + 医生/专家/老师/主任信息
 
@@ -274,7 +273,7 @@
     res:{}
   }
 ```
-<h3 id='api_login'>2.登陆</h3>
+<h3 name='api_login'>2.登陆</h3>
 
 <hr/>
 Usage: 用户登录认证接口
@@ -321,7 +320,7 @@ Response(成功应答)
   }
 ```
 
-<h3 id='api_up_img'> 3.上传图片 </h3>
+<h3 name='api_up_img'> 3.上传图片 </h3>
 
 <hr/>
 Usage:  上传静态图片接口
@@ -345,7 +344,7 @@ Request form:
 
 Response: {}
 
-<h3 id='api_get_img'> 4.获取静态图片</h3>
+<h3 name='api_get_img'> 4.获取静态图片</h3>
 
 <hr/>
 Usage: 获取静态图片接口
@@ -363,7 +362,7 @@ Request Json: {}
 
 Response: 图片信息
 
-<h3 id='api_add_doctor'> 5.添加主任/老师/医生信息</h3>
+<h3 name='api_add_doctor'> 5.添加主任/老师/医生信息</h3>
 
 <hr/>
 Usage: 后台添加主任/老师/医生信息
@@ -409,7 +408,7 @@ Response JSON:
 }
 ```
 
-<h3 id='api_find_doctor'> 6.查询主任/老师/医生详细信息</h3>
+<h3 name='api_find_doctor'> 6.查询主任/老师/医生详细信息</h3>
 
 <hr/>
 Usage: 后台查看医生用户信息
@@ -474,7 +473,7 @@ Response:
   }
 ```
 
-<h3 id='api_add_user'>7.添加用户(会员)信息</h3>
+<h3 name='api_add_user'>7.添加用户(会员)信息</h3>
 
 <hr/>
 Usage: (主任、医生、老师)新增用户信息
@@ -547,7 +546,7 @@ Response JSON:
 }
 ```
 
-<h3 id='api_find_contacts'> 8.查看联系人列表</h3>
+<h3 name='api_find_contacts'> 8.查看联系人列表</h3>
 
 <hr/>
 Usage: (主任、医生、老师)查看联系人列表
@@ -613,7 +612,7 @@ Response JSON:
 }
 ```
 
-<h3 id='api_find_one_user'> 9.查看用户详细信息</h3>
+<h3 name='api_find_one_user'> 9.查看用户详细信息</h3>
 
 <hr/>
 Usage: (主任、医生、老师)查看用户详细信息
@@ -672,7 +671,7 @@ Response JSON:
 }
 ```
 
-<h3 id='api_find_user_cr'> 10.查看用户的关怀记录(分页查询)</h3>
+<h3 name='api_find_user_cr'> 10.查看用户的关怀记录(分页查询)</h3>
 
 <hr/>
 Usage: (主任、医生、老师)查看用户的关怀记录列表
@@ -728,7 +727,7 @@ Response JSON:
 }
 ```
 
-<h3 id='api_add_user_cr'> 11.医生新增用户的关怀记录</h3>
+<h3 name='api_add_user_cr'> 11.医生新增用户的关怀记录</h3>
 
 <hr/>
 Usage: (主任、医生、老师)新增用户的关怀记录
@@ -781,7 +780,7 @@ Response JSON:
 }
 ```
 
-<h3 id='api_check_user_exists'>12.检验(根据手机号、身份证号)患者是否已存在接口</h3>
+<h3 name='api_check_user_exists'>12.检验(根据手机号、身份证号)患者是否已存在接口</h3>
 
 <hr/>
 Host:  Api Server
@@ -819,7 +818,7 @@ Response JSON:
 }
 ```
 
-<h3 id='api_add_feedback'> 13.新增用户反馈信息接口</h3>
+<h3 name='api_add_feedback'> 13.新增用户反馈信息接口</h3>
 
 <hr/>
 Host:  Api Server
@@ -856,7 +855,7 @@ Response JSON:
 }
 ```
 
-<h3 id='api_add_appointment'> 14.新增预约接口</h3>
+<h3 name='api_add_appointment'> 14.新增预约接口</h3>
 <hr/>
 Host:  Api Server
 
@@ -898,7 +897,7 @@ Response JSON:
 }
 ```
 
-<h3 id='api_add_resource'> 15. 医生新增竞价时间</h3>
+<h3 name='api_add_resource'> 15. 医生新增竞价时间</h3>
 
 <hr/>
 Host:  Api Server
@@ -941,7 +940,7 @@ Response JSON:
 }
 ```
 
-<h3 id='api_find_resource'> 16. 医生竞价资源查询</h3>
+<h3 name='api_find_resource'> 16. 医生竞价资源查询</h3>
 
 <hr/>
 Host:  Api Server
@@ -1005,7 +1004,7 @@ Response JSON:
 }
 ```
 
-<h3 id='api_purchase_resource'> 17. 购买医生竞价资源</h3>
+<h3 name='api_purchase_resource'> 17. 购买医生竞价资源</h3>
 
 <hr/>
 Host:  Api Server
@@ -1046,7 +1045,7 @@ Response JSON:
 }
 ```
 
-<h3 id='api_update_resource'> 18. 医生竞价资源修改</h3>
+<h3 name='api_update_resource'> 18. 医生竞价资源修改</h3>
 
 <hr/>
 Host:  Api Server
