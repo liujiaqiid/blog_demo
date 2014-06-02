@@ -26,7 +26,7 @@
 
 
 
-<div id="chg_log"></div>
+<div id="chg_log" name="chg_log"></div>
 ## Changes Log
 <table>
   <th>
@@ -93,7 +93,7 @@
 	+ Security(Eg. Login/HIPAA)
 	+ Reduce network require times
 
-<div id="resource_design"></div>
+<div id="resource_design" name="resource_design"></div>
 ## 云端服务器资源设计
 
 + 医生/专家/老师/主任信息
